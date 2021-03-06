@@ -211,6 +211,11 @@ body{
 }
 
 
+#archetype>.archetypeItalic{
+    font-style: italic;
+}
+
+
 #lineageAbilities{
     position:absolute;
     top: 835px;

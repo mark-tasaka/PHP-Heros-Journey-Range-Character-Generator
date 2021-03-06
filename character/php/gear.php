@@ -10,7 +10,7 @@ function getGear($input)
         $a03 = array("Belladonna (bunch)");
         $a04 = array("Belt Pouch");
         $a05 = array("Bottle of Wine");
-        $a06 = array("Candles (12) ");
+        $a06 = array("Candles (12)");
         $a07 = array("Case (map or scroll)");
         $a08 = array("Cloak");
         $a09 = array("Cloth (bolt)");
@@ -69,11 +69,11 @@ function getGear($input)
 
 function getRandomGear()
 {
-        $gearArray = array(1, 4, 8, 10, 15, 20, 29, 33, 35, 37, 48);
+        $gearArray = array(1, 4, 8, 16, 20, 35, 47, 48);
 
         $numberOfGear = rand(8, 18);
 
-        $addToArray = array(0, 2, 3, 5, 6, 7, 9, 11, 12, 13, 14, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 31, 32, 34, 36, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 49, 50);
+        $addToArray = array(0, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 30, 31, 32, 34, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 49, 50);
 
         shuffle($addToArray);
 

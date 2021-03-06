@@ -84,16 +84,17 @@
 
         $lineageDefenseBonus = lineageDefenseBonus($lineageNumber);
 
-        $buglarThievery = thievery($level);
+        $forestry = forestry($level);
 
 
         $abilityScoreArray = array();
         $abilityScoreArray = getAbilityScores($lineageNumber);
 
         $might = $abilityScoreArray[0];
+        $might = minimumClassScore($might);
         $finesse = $abilityScoreArray[1];
-        $finesse = minimumClassScore($finesse);
         $resolve = $abilityScoreArray[2];
+        $resolve = minimumClassScore($resolve);
         $insight = $abilityScoreArray[3];
         $bearing = $abilityScoreArray[4];
         $weal = $abilityScoreArray[5];
@@ -105,13 +106,10 @@
         $bearingMod = getAbilityScoreModString($bearing);
         $wealMod = getAbilityScoreModString($weal);
 
-        $xpBonus = getXPBonus($finesse);
-        $saveMessage = burglarSaveMessage();
-        $thiefCant = thiefCant($insight);
-        $decipherLanguages = decipherLanguages($insight);
-        $usePoisons = usePoison($insight, $finesse);
-        $proficientClimber = proficientClimber($might);
-        $thiefAcrobat = thiefAcrobat($finesse);
+        $xpBonus = getXPBonus($resolve);
+        $saveMessage = saveMessage();
+        $naturalWanderer = naturalWanderer($insight, $level);
+        $twoWeaponFighting = twoWeaponFighting($finesse);
 
 
         $xpNextLevel = getXPNextLevel ($level);
@@ -510,13 +508,10 @@
        
         <span id="archetype">
            <?php
-                echo $buglarThievery;
+                echo $forestry;
                 echo $saveMessage;
-                echo $thiefCant;
-                echo $decipherLanguages;
-                echo $usePoisons;
-                echo $proficientClimber;
-                echo $thiefAcrobat;
+                echo $naturalWanderer;
+                echo $twoWeaponFighting;
                 echo $xpBonus;
            ?>
         </span>
