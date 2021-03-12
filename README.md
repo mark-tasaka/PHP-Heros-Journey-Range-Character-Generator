@@ -4,6 +4,18 @@ The Ranger Character Generator generates a random Hero’s Journey character usi
 
 ----------------------
 
+A live version of the Ranger Character Generator is available at:
+
+https://www.oldschooladventures.org/hero/more/classes/ranger/
+
+
+---------------------------------
+
+
+Update 1.02: 2021-03-12
+
+A launch page for Ranger Character Generator has been added.
+
 
 Update 1.01: 2021-03-06
 
